@@ -1,0 +1,15 @@
+{
+  "name": "tama-gotchu",
+  "version": "0.1.0",
+  "description": "Another Discord bot",
+  "main": "index.js",
+  "author": "Kamal Osman",
+  "dependencies": {
+    "discord.io": "^2.5.2",
+    "winston": "^2.3.1",
+    "micro": "latest"
+  },
+  "scripts": {
+    "start": "micro"
+  }
+}
