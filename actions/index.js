@@ -11,14 +11,27 @@ export const water = () => {
   }
 }
 
-export const feelPain = difficulty => {
+export const feelPain = () => {
   return {
     type: 'FEEL_PAIN',
   }
 }
 
-export const feelJoy = happieness => {
+export const feelJoy = () => {
   return {
     type: 'FEEL_JOY',
+  }
+}
+
+export const idle = () => {
+  return {
+    type: 'IDLE',
+  }
+}
+
+export const changeDifficulty = difficulty => {
+  return {
+    type: 'CHANGE_DIFFICULTY',
+    difficulty
   }
 }
