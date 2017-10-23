@@ -1,19 +1,33 @@
 {
-  "name": "tama-gotchu",
-  "version": "0.1.0",
-  "description": "Another Discord bot",
+  "name": "tama-gottwo",
+  "version": "1.0.0",
+  "description": "A discord pet",
   "main": "index.js",
-  "author": "Kamal Osman",
   "dependencies": {
-    "discord.io": "^2.5.2",
-    "micro": "latest",
+    "discord.io": "^2.5.3",
     "redux": "^3.7.2",
-    "winston": "^2.3.1"
-  },
-  "scripts": {
-    "start": "micro"
+    "winston": "^2.4.0"
   },
   "devDependencies": {
-    "redux-devtools": "^3.4.0"
-  }
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "npm run build && node lib/index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamaltmo/tama-gotchu.git"
+  },
+  "author": "Kamal Osman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamaltmo/tama-gotchu/issues"
+  },
+  "homepage": "https://github.com/kamaltmo/tama-gotchu#readme"
 }

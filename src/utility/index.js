@@ -1,5 +1,4 @@
 // A function that creates a default state for the bot depending on difficulty
-
 const state = {
   alive: true,
   difficulty: "Easy",
@@ -7,11 +6,13 @@ const state = {
   health: 100,
   watered: true,
   tickSinceWater: 0,
-  feed: true,
+  fed: true,
   tickSinceFeed: 0,
   happieness: 2, // On a scale of 0-4
   tick: 0
 }
+
+let stateCreator;
 
 export default stateCreator = (difficulty) => {
   switch (difficulty) {
